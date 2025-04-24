@@ -1,1 +1,0 @@
-This folder includes the pre-defined orchestrators for different purpose, such as customer service, user education, recommendation assistant, etc. The orchestrator will load the YAML configuration and parse it to reconstruct the task graph.
