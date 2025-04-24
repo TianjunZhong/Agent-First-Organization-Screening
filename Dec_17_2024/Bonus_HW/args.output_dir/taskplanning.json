@@ -1,0 +1,47 @@
+[
+    {
+        "task_name": "Provide a curated list of JJ Lin's albums and singles for exploration",
+        "steps": [
+            "Provide a curated list of JJ Lin's albums and singles for exploration"
+        ]
+    },
+    {
+        "task_name": "Share information on JJ Lin's most recent music releases and projects",
+        "steps": [
+            "Share information on JJ Lin's most recent music releases and projects"
+        ]
+    },
+    {
+        "task_name": "Answer inquiries related to JJ Lin's discography and album details",
+        "steps": [
+            "Answer inquiries related to JJ Lin's discography and album details"
+        ]
+    },
+    {
+        "task_name": "Provide details about upcoming concerts and events featuring JJ Lin",
+        "steps": [
+            "Provide details about upcoming concerts and events featuring JJ Lin"
+        ]
+    },
+    {
+        "task_name": "Offer personalized JJ Lin music recommendations based on user preferences",
+        "steps": [
+            "Use MessageWorker to inquire about the user's music preferences and interests related to JJ Lin, such as favorite songs, albums, or music genres.",
+            "Utilize RAGWorker to analyze user input and retrieve relevant information about JJ Lin's music catalog and related fan content.",
+            "Use MessageWorker to deliver personalized music recommendations to the user based on their preferences and RAGWorker findings.",
+            "Ask the user if they are satisfied with the recommendations or if they would like additional or alternative suggestions.",
+            "Offer further assistance or information about JJ Lin's music, such as concert updates or new releases, to enhance user engagement."
+        ]
+    },
+    {
+        "task_name": "Facilitate fan engagement and interaction within the JJ Lin community",
+        "steps": [
+            "Welcome the user and inquire about their interests related to JJ Lin, such as music, concerts, or fan activities.",
+            "Provide personalized content or updates based on the user's stated interests. This could include new music releases, concert dates, or fan meet-up events.",
+            "Encourage the user to engage with the JJ Lin fan community by offering options to join fan forums, participate in fan challenges, or share their experiences.",
+            "Ask if the user has any specific questions or needs additional information about JJ Lin's music, albums, or events.",
+            "Provide detailed answers or further resources to the user's inquiries, ensuring they have all the information needed to stay engaged with the community.",
+            "Invite the user to receive notifications for future updates or releases related to JJ Lin, enhancing their ongoing engagement with the content."
+        ]
+    }
+]

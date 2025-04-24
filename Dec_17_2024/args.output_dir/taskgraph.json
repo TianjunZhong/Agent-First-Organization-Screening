@@ -1,0 +1,446 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "name": "MessageWorker",
+                "attribute": {
+                    "value": "Hello JJ Lin fans! I'm your JJ Lin Fan Ambassador. How can I assist you today? Whether you're looking for the latest updates, exploring his music, or connecting with the fan community, I'm here to help!",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here is a curated list of JJ Lin's albums and singles for you to explore.",
+                    "task": "Provide a curated list of JJ Lin's albums and singles for exploration",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "2",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "JJ Lin recently released a new single titled 'Not Tonight' and is working on a collaboration project with other artists. Would you like to know more details about these releases?",
+                    "task": "Share information on JJ Lin's most recent music releases and projects",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "3",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "JJ Lin has released several albums including 'Stories Untold', 'From M.E. to Myself', and 'Message in a Bottle'. Would you like more details on a specific album?",
+                    "task": "Answer inquiries related to JJ Lin's discography and album details",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "4",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are the details of JJ Lin's upcoming concerts and events according to our records: [details].",
+                    "task": "Provide details about upcoming concerts and events featuring JJ Lin",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "5",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "What are your favorite JJ Lin songs or albums, or do you have any specific music genres you enjoy?",
+                    "task": "Use MessageWorker to inquire about the user's music preferences and interests related to JJ Lin, such as favorite songs, albums, or music genres.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "6",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "",
+                    "task": "Utilize RAGWorker to analyze user input and retrieve relevant information about JJ Lin's music catalog and related fan content.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "7",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on your interests, I recommend checking out JJ Lin's latest album and these popular songs.",
+                    "task": "Use MessageWorker to deliver personalized music recommendations to the user based on their preferences and RAGWorker findings.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "8",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Are you satisfied with these recommendations, or would you like to explore more options?",
+                    "task": "Ask the user if they are satisfied with the recommendations or if they would like additional or alternative suggestions.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "9",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like to receive updates on JJ Lin's upcoming concerts or new releases?",
+                    "task": "Offer further assistance or information about JJ Lin's music, such as concert updates or new releases, to enhance user engagement.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "10",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Welcome! Are you interested in JJ Lin's music, concerts, or perhaps fan activities?",
+                    "task": "Welcome the user and inquire about their interests related to JJ Lin, such as music, concerts, or fan activities.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "11",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Here are the latest updates for JJ Lin fans: his new album release is next week, and there's a concert scheduled next month in your city!",
+                    "task": "Provide personalized content or updates based on the user's stated interests. This could include new music releases, concert dates, or fan meet-up events.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "12",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like to join JJ Lin's fan community to participate in challenges and share your experiences with other fans?",
+                    "task": "Encourage the user to engage with the JJ Lin fan community by offering options to join fan forums, participate in fan challenges, or share their experiences.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "13",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Do you have any specific questions or need more information about JJ Lin's music, albums, or upcoming events?",
+                    "task": "Ask if the user has any specific questions or needs additional information about JJ Lin's music, albums, or events.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "14",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Based on your inquiry, here's detailed information about JJ Lin's latest album and where you can find more about his music journey.",
+                    "task": "Provide detailed answers or further resources to the user's inquiries, ensuring they have all the information needed to stay engaged with the community.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ],
+        [
+            "15",
+            {
+                "name": "DefaultWorker",
+                "attribute": {
+                    "value": "Would you like to receive notifications for future updates or releases related to JJ Lin?",
+                    "task": "Invite the user to receive notifications for future updates or releases related to JJ Lin, enhancing their ongoing engagement with the content.",
+                    "directed": false
+                },
+                "limit": 1
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User wants to discover JJ Lin's music",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "2",
+            {
+                "intent": "User seeks updates on JJ Lin's latest releases",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "3",
+            {
+                "intent": "User has questions about JJ Lin's albums",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "4",
+            {
+                "intent": "User is interested in JJ Lin's concerts",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "5",
+            {
+                "intent": "User desires personalized music recommendations",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "5",
+            "6",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "6",
+            "7",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "10",
+            {
+                "intent": "User wishes to engage with the JJ Lin fan community",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "10",
+            "11",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "11",
+            "12",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "12",
+            "13",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "13",
+            "14",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "14",
+            "15",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "JJ Lin Fan Ambassador",
+    "user_objective": "The JJ Lin chatbot helps users discover and explore JJ Lin's music, updates on his latest releases, and other fan-related content. It can answer questions about his albums, concerts, and provide personalized music recommendations, while fostering engagement within the JJ Lin fan community.",
+    "builder_objective": "The JJ Lin chatbot gathers user preferences to suggest music, track engagement, and provide personalized recommendations to enhance their connection to JJ Lin's music.",
+    "domain": "JJ Lin's music and fan engagement",
+    "intro": "JJ Lin is a renowned Singaporean singer-songwriter and music producer, recognized for his impactful contributions to the Mandopop industry. With a career spanning over two decades, he has released multiple albums, including chart-topping hits like If You Don't Let Me Go, Stories Untold, and Drifter. JJ Lin is celebrated for his powerful voice, heartfelt lyrics, and versatility in music, blending pop, R&B, and traditional styles. His music resonates with audiences worldwide, and he is also involved in philanthropic work, actively supporting various charitable causes. In addition to his music career, JJ Lin regularly connects with fans through concerts, live streams, and exclusive online content, fostering a global community. His latest album Like You Do was released recently, and his world tour continues to captivate fans across the globe. JJ Lin's official website and social media channels provide updates on his latest music, upcoming events, and fan interactions.",
+    "task_docs": [
+        {
+            "source": "https://en.wikipedia.org/wiki/JJ_Lin",
+            "desc": "a comprehensive overview of JJ Lin's life, career, and achievements",
+            "num": 10
+        },
+        {
+            "source": "https://www.allmusic.com/artist/jj-lin-mn0002327509",
+            "desc": "insights into JJ Lin's musical style, discography, and critical reception",
+            "num": 1
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://en.wikipedia.org/wiki/JJ_Lin",
+            "desc": "a comprehensive overview of JJ Lin's life, career, and achievements",
+            "num": 10
+        },
+        {
+            "source": "https://www.celebsagewiki.com/jj-lin",
+            "desc": "details on JJ Lin's biography and life timeline",
+            "num": 1
+        },
+        {
+            "source": "https://www.allmusic.com/artist/jj-lin-mn0002327509",
+            "desc": "insights into JJ Lin's musical style, discography, and critical reception",
+            "num": 5
+        },
+        {
+            "source": "https://music.apple.com/us/artist/jj-lin/216635866",
+            "desc": "JJ Lin's profile on Apple Music: albums, playlists, and about",
+            "num": 1
+        },
+        {
+            "source": "https://www.discogs.com/artist/4347640-JJ-Lin",
+            "desc": "an extensive list of JJ Lin's albums, singles, and collaborations",
+            "num": 1
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        "RAGWorker",
+        "MessageWorker",
+        "DefaultWorker"
+    ],
+    "nluapi": "http://localhost:55135/nlu/predict",
+    "slotfillapi": "http://localhost:55135/slotfill/predict"
+}
