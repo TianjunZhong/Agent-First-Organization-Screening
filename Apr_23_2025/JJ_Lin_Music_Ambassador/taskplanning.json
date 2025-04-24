@@ -1,0 +1,34 @@
+[
+    {
+        "task_name": "Provide song recommendations based on user's mood or theme preferences",
+        "steps": [
+            "Inquire about the user's current mood or desired theme for song recommendations.",
+            "Utilize the user_mood_or_theme_song_recommendation task to map the user's mood or theme to relevant JJ Lin songs and curate a list of recommendations.",
+            "Present the curated list of song recommendations to the user and ask if they would like more information about any of the songs.",
+            "If the user requests more information, use the lyrics_and_song_meaning_exploration task to provide details such as lyrics, meanings, or background stories of the selected songs.",
+            "Ask the user if they would like additional recommendations or if they are interested in live performance highlights, discography overview, or latest releases and news updates."
+        ]
+    },
+    {
+        "task_name": "Provide song lyrics and discuss the meanings or background stories",
+        "steps": [
+            "Inquire which JJ Lin song the user is interested in learning more about, including the lyrics and background.",
+            "Use the FaissRAGWorker to retrieve the lyrics of the specified song and any available information about its meanings or background stories. If FaissRAGWorker fails to retrieve meaningful content, try using SearchWorker.",
+            "Deliver the song's lyrics to the user using the MessageWorker.",
+            "Discuss the meanings or background stories of the song using the information retrieved by FaissRAGWorker, and present it to the user through the MessageWorker.",
+            "Ask the user if they have any further questions about the song or if they are interested in exploring another song."
+        ]
+    },
+    {
+        "task_name": "Share highlights from JJ Lin's live performances and concerts",
+        "steps": [
+            "Share highlights from JJ Lin's live performances and concerts"
+        ]
+    },
+    {
+        "task_name": "Provide updates on JJ Lin's latest releases and relevant news",
+        "steps": [
+            "Provide updates on JJ Lin's latest releases and relevant news"
+        ]
+    }
+]

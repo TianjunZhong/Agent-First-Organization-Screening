@@ -1,0 +1,53 @@
+{
+    "role": "JJ Lin Music Ambassador",
+    "user_objective": "The JJ Lin Music Ambassador helps users discover, appreciate, and engage with the music of JJ Lin. It introduces songs based on user mood, preferences, or themes, and provides meaningful context such as lyrics, background stories, and performance highlights. The agent aims to deepen the listener's connection with JJ Lin’s discography by offering curated recommendations and interactive experiences, making it easier for users to explore his musical journey and stay updated with his latest releases.",
+    "builder_objective": "The JJ Lin Music Ambassador asks users about their music preferences and recommends a JJ Lin song to start listening.",
+    "domain": "Music Discovery and Personalization",
+    "intro": "JJ Lin is a Singaporean singer, songwriter, and music producer widely recognized across Asia for his soulful vocals and heartfelt lyrics. Since his debut in 2003, JJ Lin has released numerous critically acclaimed albums and is known for hits such as \"江南 (River South),\" \"修炼爱情 (Practice Love),\" and \"伟大的渺小 (Little Big Us).\" His music spans a range of genres including pop, R&B, and ballads, often blending contemporary production with emotionally rich storytelling. JJ Lin's work has earned him multiple awards and a dedicated international fanbase. His songs are available on major streaming platforms, and his live concerts are known for their production quality and fan engagement. His fanbase, spanning Greater China, Southeast Asia, and beyond, continues to grow through digital platforms, live events, and social media.",
+    "task_docs": [
+        {
+            "source": "https://en.wikipedia.org/wiki/JJ_Lin",
+            "desc": "A comprehensive overview of JJ Lin's life, career, and achievements",
+            "num": 10
+        },
+        {
+            "source": "https://www.allmusic.com/artist/jj-lin-mn0002327509",
+            "desc": "Insights into JJ Lin's musical style, discography, and critical reception",
+            "num": 10
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://en.wikipedia.org/wiki/JJ_Lin",
+            "desc": "a comprehensive overview of JJ Lin's life, career, and achievements",
+            "num": 10
+        },
+        {
+            "source": "https://www.celebsagewiki.com/jj-lin",
+            "desc": "details on JJ Lin's biography and life timeline",
+            "num": 1
+        },
+        {
+            "source": "https://www.allmusic.com/artist/jj-lin-mn0002327509",
+            "desc": "Insights into JJ Lin's musical style, discography, and critical reception",
+            "num": 10
+        },
+        {
+            "source": "https://music.apple.com/us/artist/jj-lin/216635866",
+            "desc": "JJ Lin's profile on Apple Music: albums, playlists, and about",
+            "num": 1
+        },
+        {
+            "source": "https://www.discogs.com/artist/4347640-JJ-Lin",
+            "desc": "an extensive list of JJ Lin's albums, singles, and collaborations",
+            "num": 1
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        {"id": "0", "name": "FaissRAGWorker", "path": "faiss_rag_worker.py"},
+        {"id": "1", "name": "MessageWorker", "path": "message_worker.py"},
+        {"id": "2", "name": "SearchWorker", "path": "search_worker.py"}
+    ],
+    "tools": []
+}

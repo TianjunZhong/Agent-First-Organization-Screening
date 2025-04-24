@@ -1,0 +1,629 @@
+{
+    "nodes": [
+        [
+            "0",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Hello and welcome to the JJ Lin Music Ambassador! Whether you're a long-time fan or new to JJ's music, I'm here to guide you through his incredible discography. Let me know your mood or preferences, and I'll introduce you to songs that resonate with you. Want to learn more about a specific song or hear some behind-the-scenes stories? Just ask! Let's dive into the world of JJ Lin together and discover music that truly moves you.",
+                    "task": "start message",
+                    "directed": false
+                },
+                "limit": 1,
+                "type": "start"
+            }
+        ],
+        [
+            "1",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Can you tell me about your current mood or the theme you're interested in for song recommendations?",
+                    "task": "Inquire about the user's current mood or desired theme for song recommendations.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "2",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "user_mood_or_theme_song_recommendation"
+                },
+                "attribute": {
+                    "value": "13",
+                    "task": "Utilize the user_mood_or_theme_song_recommendation task to map the user's mood or theme to relevant JJ Lin songs and curate a list of recommendations.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "3",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Here are some songs that match your mood/theme. Would you like more information about any of these songs?",
+                    "task": "Present the curated list of song recommendations to the user and ask if they would like more information about any of the songs.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "4",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "lyrics_and_song_meaning_exploration"
+                },
+                "attribute": {
+                    "value": "16",
+                    "task": "If the user requests more information, use the lyrics_and_song_meaning_exploration task to provide details such as lyrics, meanings, or background stories of the selected songs.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "5",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Would you like additional song recommendations, or are you interested in live performance highlights, a discography overview, or the latest releases and news updates?",
+                    "task": "Ask the user if they would like additional recommendations or if they are interested in live performance highlights, discography overview, or latest releases and news updates.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "6",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Which JJ Lin song would you like to learn more about? I can provide details about its lyrics and background.",
+                    "task": "Inquire which JJ Lin song the user is interested in learning more about, including the lyrics and background.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "7",
+            {
+                "resource": {
+                    "id": "0",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Use the FaissRAGWorker to retrieve the lyrics of the specified song and any available information about its meanings or background stories. If FaissRAGWorker fails to retrieve meaningful content, try using SearchWorker.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "8",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Here are the lyrics to the song you requested.",
+                    "task": "Deliver the song's lyrics to the user using the MessageWorker.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "9",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Let me share some background stories and meanings about this song.",
+                    "task": "Discuss the meanings or background stories of the song using the information retrieved by FaissRAGWorker, and present it to the user through the MessageWorker.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "10",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Do you have any more questions about this song, or are you interested in exploring another song?",
+                    "task": "Ask the user if they have any further questions about the song or if they are interested in exploring another song.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "11",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "live_performance_and_concert_highlights"
+                },
+                "attribute": {
+                    "value": "19",
+                    "task": "Share highlights from JJ Lin's live performances and concerts",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "12",
+            {
+                "resource": {
+                    "id": "nested_graph",
+                    "name": "latest_releases_and_news_updates"
+                },
+                "attribute": {
+                    "value": "21",
+                    "task": "Provide updates on JJ Lin's latest releases and relevant news",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "13",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "How are you feeling today? Or do you have a theme in mind?",
+                    "task": "Ask user for their current mood or theme preference.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "14",
+            {
+                "resource": {
+                    "id": "0",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Match mood or theme to JJ Lin's songs.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "15",
+            {
+                "resource": {
+                    "id": "0",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Retrieve a curated list of songs that fit the mood or theme.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "16",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Which song are you interested in?",
+                    "task": "Ask user for the song they are interested in.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "17",
+            {
+                "resource": {
+                    "id": "2",
+                    "name": "SearchWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Retrieve the lyrics of the specified song.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "18",
+            {
+                "resource": {
+                    "id": "0",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "Here is some background information about the song and its meaning.",
+                    "task": "Provide an analysis or background story related to the song.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "19",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Are there any specific performances or concerts you are interested in?",
+                    "task": "Ask user for specific performances or concerts they are interested in.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "20",
+            {
+                "resource": {
+                    "id": "0",
+                    "name": "FaissRAGWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Retrieve highlights or notable moments from specified performances.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "21",
+            {
+                "resource": {
+                    "id": "2",
+                    "name": "SearchWorker"
+                },
+                "attribute": {
+                    "value": "",
+                    "task": "Retrieve the latest news and music releases related to JJ Lin.",
+                    "directed": false
+                }
+            }
+        ],
+        [
+            "22",
+            {
+                "resource": {
+                    "id": "1",
+                    "name": "MessageWorker"
+                },
+                "attribute": {
+                    "value": "Here are the latest news and music releases related to JJ Lin.",
+                    "task": "Provide updates to the user.",
+                    "directed": false
+                }
+            }
+        ]
+    ],
+    "edges": [
+        [
+            "0",
+            "1",
+            {
+                "intent": "User wants to discover JJ Lin's music based on mood or theme",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "1",
+            "2",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "2",
+            "3",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "3",
+            "4",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "4",
+            "5",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "6",
+            {
+                "intent": "User seeks to learn more about JJ Lin's song lyrics and meanings",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "6",
+            "7",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "7",
+            "8",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "8",
+            "9",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "9",
+            "10",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "11",
+            {
+                "intent": "User is interested in JJ Lin's live performances and concert highlights",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "0",
+            "12",
+            {
+                "intent": "User wishes to explore JJ Lin's discography",
+                "attribute": {
+                    "weight": 1,
+                    "pred": true,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "13",
+            "14",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "14",
+            "15",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "16",
+            "17",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "17",
+            "18",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "19",
+            "20",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ],
+        [
+            "21",
+            "22",
+            {
+                "intent": "None",
+                "attribute": {
+                    "weight": 1,
+                    "pred": false,
+                    "definition": "",
+                    "sample_utterances": []
+                }
+            }
+        ]
+    ],
+    "role": "JJ Lin Music Ambassador",
+    "user_objective": "The JJ Lin Music Ambassador helps users discover, appreciate, and engage with the music of JJ Lin. It introduces songs based on user mood, preferences, or themes, and provides meaningful context such as lyrics, background stories, and performance highlights. The agent aims to deepen the listener's connection with JJ Lin\u2019s discography by offering curated recommendations and interactive experiences, making it easier for users to explore his musical journey and stay updated with his latest releases.",
+    "builder_objective": "The JJ Lin Music Ambassador asks users about their music preferences and recommends a JJ Lin song to start listening.",
+    "domain": "Music Discovery and Personalization",
+    "intro": "JJ Lin is a Singaporean singer, songwriter, and music producer widely recognized across Asia for his soulful vocals and heartfelt lyrics. Since his debut in 2003, JJ Lin has released numerous critically acclaimed albums and is known for hits such as \"\u6c5f\u5357 (River South),\" \"\u4fee\u70bc\u7231\u60c5 (Practice Love),\" and \"\u4f1f\u5927\u7684\u6e3a\u5c0f (Little Big Us).\" His music spans a range of genres including pop, R&B, and ballads, often blending contemporary production with emotionally rich storytelling. JJ Lin's work has earned him multiple awards and a dedicated international fanbase. His songs are available on major streaming platforms, and his live concerts are known for their production quality and fan engagement. His fanbase, spanning Greater China, Southeast Asia, and beyond, continues to grow through digital platforms, live events, and social media.",
+    "task_docs": [
+        {
+            "source": "https://en.wikipedia.org/wiki/JJ_Lin",
+            "desc": "A comprehensive overview of JJ Lin's life, career, and achievements",
+            "num": 10
+        },
+        {
+            "source": "https://www.allmusic.com/artist/jj-lin-mn0002327509",
+            "desc": "Insights into JJ Lin's musical style, discography, and critical reception",
+            "num": 10
+        }
+    ],
+    "rag_docs": [
+        {
+            "source": "https://en.wikipedia.org/wiki/JJ_Lin",
+            "desc": "a comprehensive overview of JJ Lin's life, career, and achievements",
+            "num": 10
+        },
+        {
+            "source": "https://www.celebsagewiki.com/jj-lin",
+            "desc": "details on JJ Lin's biography and life timeline",
+            "num": 1
+        },
+        {
+            "source": "https://www.allmusic.com/artist/jj-lin-mn0002327509",
+            "desc": "Insights into JJ Lin's musical style, discography, and critical reception",
+            "num": 10
+        },
+        {
+            "source": "https://music.apple.com/us/artist/jj-lin/216635866",
+            "desc": "JJ Lin's profile on Apple Music: albums, playlists, and about",
+            "num": 1
+        },
+        {
+            "source": "https://www.discogs.com/artist/4347640-JJ-Lin",
+            "desc": "an extensive list of JJ Lin's albums, singles, and collaborations",
+            "num": 1
+        }
+    ],
+    "tasks": [],
+    "workers": [
+        {
+            "id": "0",
+            "name": "FaissRAGWorker",
+            "path": "faiss_rag_worker.py"
+        },
+        {
+            "id": "1",
+            "name": "MessageWorker",
+            "path": "message_worker.py"
+        },
+        {
+            "id": "2",
+            "name": "SearchWorker",
+            "path": "search_worker.py"
+        }
+    ],
+    "tools": [],
+    "nluapi": "",
+    "slotfillapi": ""
+}

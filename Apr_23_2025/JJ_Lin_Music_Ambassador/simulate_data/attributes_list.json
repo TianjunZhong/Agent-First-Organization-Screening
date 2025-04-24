@@ -1,0 +1,72 @@
+[
+    {
+        "product_experience_level": "new to this product",
+        "customer_type": "new prospect",
+        "persona": "neutral",
+        "current_webpage": "product page",
+        "modality": "text",
+        "communication_type": "incoming",
+        "discovery_type": "search engine results",
+        "buying_behavior": "economic",
+        "budget": "budget: low budget",
+        "purchase_history": "first-time visitor",
+        "location": "Taiwan",
+        "goal": "Given your profile as a new prospect with a low budget from Taiwan, new to the product, and your goal of product rental related to JJ Lin's music or merchandise, a more specific and aligned goal could be:\n\n\"I want to explore affordable rental options for JJ Lin's concert equipment or music-related products available in Taiwan, so I can experience his live performance quality without a large upfront investment.\"\n\nThis goal ties your interest in product rental to JJ Lin's known concert production quality and your budget-conscious, first-time buyer profile."
+    },
+    {
+        "product_experience_level": "new to this product",
+        "customer_type": "new prospect",
+        "persona": "neutral",
+        "current_webpage": "product page",
+        "modality": "text",
+        "communication_type": "incoming",
+        "discovery_type": "search engine results",
+        "buying_behavior": "quality oriented",
+        "budget": "budget: mid-range budget",
+        "purchase_history": "first-time potential buyer",
+        "location": "Taiwan",
+        "goal": "Given your profile as a new prospect from Taiwan with a mid-range budget, quality-oriented buying behavior, and your goal to purchase a product related to JJ Lin, here is a more specific and aligned goal for your chatbot interaction:\n\n**Revised Goal:**  \n\"I want to explore and purchase JJ Lin\u2019s latest albums or exclusive merchandise available for fans in Taiwan, focusing on high-quality official products within a mid-range budget.\"\n\nThis goal reflects your interest in JJ Lin\u2019s music and related products, your location, budget considerations, and your status as a first-time buyer seeking quality."
+    },
+    {
+        "product_experience_level": "new to this product",
+        "customer_type": "new prospect",
+        "persona": "neutral",
+        "current_webpage": "product page",
+        "modality": "text",
+        "communication_type": "incoming",
+        "discovery_type": "search engine results",
+        "buying_behavior": "economic",
+        "budget": "budget: low budget",
+        "purchase_history": "no prior purchase history",
+        "location": "Taiwan",
+        "goal": "Based on your profile as a new prospect with a low budget from Taiwan, and your interest in product information related to JJ Lin, here is a more specific and aligned goal:\n\n**\"I want to learn about JJ Lin\u2019s latest albums and singles available for streaming or purchase, including affordable options and platforms accessible in Taiwan, so I can decide which music products fit my budget and preferences.\"** \n\nThis goal narrows down your interest to relevant product details (albums, singles), considers your budget constraints, and focuses on availability in your location."
+    },
+    {
+        "product_experience_level": "new to this product",
+        "customer_type": "new prospect",
+        "persona": "neutral",
+        "current_webpage": "product page",
+        "modality": "text",
+        "communication_type": "incoming",
+        "discovery_type": "search engine results",
+        "buying_behavior": "exploratory",
+        "budget": "budget: mid-range budget",
+        "purchase_history": "first-time potential buyer",
+        "location": "Taiwan",
+        "goal": "Based on your profile as a new prospect from Taiwan with a mid-range budget and an exploratory buying behavior, and considering JJ Lin\u2019s company details, here is a more specific and aligned goal for your chatbot interaction:\n\n**Revised Goal:**  \n\"I want to learn detailed information about JJ Lin\u2019s latest music albums, streaming options, and upcoming live concerts in Taiwan, including pricing and availability, to decide if I should purchase or attend as a first-time fan.\"\n\nThis goal narrows down your interest in product information to JJ Lin\u2019s core offerings\u2014his music and live events\u2014while reflecting your new-to-the-product status and regional relevance."
+    },
+    {
+        "product_experience_level": "new to this product",
+        "customer_type": "new prospect",
+        "persona": "neutral",
+        "current_webpage": "product page",
+        "modality": "text",
+        "communication_type": "incoming",
+        "discovery_type": "search engine results",
+        "buying_behavior": "exploratory",
+        "budget": "budget: mid-range budget",
+        "purchase_history": "no prior purchase history",
+        "location": "Taiwan",
+        "goal": "Given that you are a new prospect from Taiwan, new to JJ Lin\u2019s music products, exploring options with a mid-range budget, and currently on a product page, a more specific and aligned goal for your chatbot interaction could be:\n\n\"I would like to request a refund for a recent purchase of JJ Lin\u2019s album or digital music product, as I am new to his music and want to ensure the product meets my expectations before fully committing.\"\n\nThis goal reflects your new user status, your exploratory buying behavior, and your interest in JJ Lin\u2019s music products, making the refund request more relevant and specific to your profile and the company\u2019s offerings."
+    }
+]
